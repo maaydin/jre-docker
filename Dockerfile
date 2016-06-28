@@ -15,7 +15,7 @@ rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /lib/systemd/system/basic.target.wants/*; \
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 
-# Install Oracle JDK
+# Install Oracle JRE
 RUN echo "[main]" >> /etc/yum.conf; \
 echo "proxy=$HTTP_PROXY" >> /etc/yum.conf; \
 export http_proxy=$HTTP_PROXY; \
